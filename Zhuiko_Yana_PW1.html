@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practical work 1 Zhuiko Yana 354</title>
+  <style>
+    header {
+      background-color: MistyRose;
+      text-align: center;
+      padding: 10px;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      margin-left: 30%;
+      background-color: white;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    nav {
+      float: left;
+      width: 30%;
+      height: 860px;
+      background-color: Seashell;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    footer {
+      clear: both;
+      background-color: MistyRose;
+      text-align: center;
+      padding: 10px;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      padding: 5px;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin-bottom: 1em; /* Отступ после каждого ответа */
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practical work 1 Zhuiko Yana 354</h1>
+  </header>
+
+  <nav>
+    <h2>questions</h2>
+    <ul>
+      <li><a href="#html5-standardization">1. When HTML5 became a standard?</a></li>
+      <li><a href="#html5-reasons">2. What were the main reasons for developing HTML5?</a></li>
+      <li><a href="#w3c-vs-whatwg">3. Difference between W3C HTML5 and WHATWG HTML Living Standard?</a></li>
+      <li><a href="#minimal-html-code">4. What is the minimal HTML page code?</a></li>
+      <li><a href="#semantic-presentational-markup">5. Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</a></li>
+      <li><a href="#browser-support-check">6. How can you check browser support for a particular tag or attribute?</a></li>
+      <li><a href="#audio-video-formats">7. What are the audio and video formats officially supported by HTML?</a></li>
+      <li><a href="#video-link">8. Link to Video</a></li>
+      <li><a href="#audio-link">9. Link to Audio</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <!-- Ответы на вопросы -->
+      <dl>
+        <dt id="html5-standardization">1. When HTML5 became a standard?</dt>
+        <dd>HTML5 became a standard on October 28, 2014.</dd>
+
+        <dt id="html5-reasons">2. What were the main reasons for developing HTML5?</dt>
+        <dd>The main reasons included improving multimedia support, enhancing web application capabilities, and introducing advanced features to the markup language.</dd>
+
+        <dt id="w3c-vs-whatwg">3. Difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+        <dd>W3C HTML5 represents stable versions released by W3C, while WHATWG HTML Living Standard is continuously updated, reflecting ongoing HTML development.</dd>
+
+        <dt id="minimal-html-code">4. What is the minimal HTML page code?</dt>
+        <dd>The minimal HTML page code includes the DOCTYPE declaration, HTML, head with a title, and a body with content.</dd>
+
+        <dt id="semantic-presentational-markup">5. Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+        <dd>Semantic markup focuses on meaning (e.g., <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>), while presentational markup deals with appearance (e.g., <code>&lt;font&gt;</code>, <code>&lt;b&gt;</code>). Presentational markup is considered deprecated because it mixes structure and style, making it less maintainable and impacting accessibility negatively.</dd>
+
+        <dt id="browser-support-check">6. How can you check browser support for a particular tag or attribute?</dt>
+        <dd>To check browser support, you can use online resources like MDN Web Docs or CanIUse.com. Dynamic checks can also be performed using JavaScript or CSS.</dd>
+
+        <dt id="audio-video-formats">7. What are the audio and video formats officially supported by HTML?</dt>
+        <dd>Officially supported audio formats are MP3, WAV, and OGG. Video formats include MP4, WebM, and OGG. Using other formats may result in browsers being unable to play the content.</dd>
+      </dl>
+
+      <!-- Вставка видео -->
+      <video width="640" height="360" controls>
+        <source src="HTML in 5 minutes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Вставка звуковой дорожки -->
+      <audio controls>
+        <source src="https://cdn.pixabay.com/download/audio/2023/10/13/audio_f527a9aa77.mp3?filename=christmas-magic-171334.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>I started to like all this activity only after I saw that at least something was starting to work out for me, until that moment I spent a lot of time and effort to learn how and what to do. Overall, I am happy with the result and hope that I have not forgotten anything. The audio is a little off-topic, but it will add a New Year's mood 9 months before it (this is the first thing I came across). I also want to add that I have never had to deal with web design before, but I am happy with my first results</p>
+    <p><img src="sb_l.png"></p>
+  </footer>
+
+</body>
+</html>
