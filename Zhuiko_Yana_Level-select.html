@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level-select</title>
+    <style>
+        /* Стили для html и body */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Стили для изображения */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<img src="36.jpg" usemap="#image-map" alt="Map">
+
+<!-- Карта изображения с областями -->
+<map name="image-map">
+    <!-- Область "Середина" -->
+    <area shape="rect" coords="700,350,750,400" href="level1.html" target="_blank">
+    
+    <!-- Область "Большой дом" -->
+    <area shape="rect" coords="570,230,730,350" href="final-boss.html" target="_blank">
+</map>
+
+</body>
+</html>
