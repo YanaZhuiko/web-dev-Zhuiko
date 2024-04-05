@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .block-element {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .inline-element {
+            border: 1px dashed #666;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .solid-border {
+            border-style: solid;
+            border-color: red;
+        }
+        .dotted-border {
+            border-style: dotted;
+            border-color: blue;
+        }
+        .image-container { 
+            text-align: center;
+ padding: 20px;
+            margin-bottom: 20px;
+        }
+      
+        .image-frame {
+            border: 5px solid purple; 
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left; 
+        }
+        .space-between {
+            margin-top: 20px;
+        }
+        /* Background styles */
+        .background-1 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .background-2 {
+            background-color: rgba(255, 0, 0, 0.3);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .background-3 {
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .background-4 {
+            background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #708090 10px, #465298 20px);
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .background-5 {
+            background: linear-gradient(to left, #87CEEB, #8A2BE2);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .background-6 {
+            background-color: green;
+            opacity: 0.3;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .background-7 {
+            background-image: url('☆.jpg'), url('☆.jpg');
+            background-size: cover, cover;
+            opacity: 0.9;
+            background-position: center, center;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="block-element">
+            <h2>1. How to open the developer console in Mozilla Firefox and Safari?</h2>
+            <p><strong>Mozilla Firefox:</strong> In Firefox, you can open the developer console by pressing <strong>Ctrl+Shift+K</strong> (Windows/Linux) or <strong>Cmd+Option+K</strong> (Mac).</p>
+            <p><strong>Safari:</strong> To open the developer console in Safari, you can use the following methods:</p>
+            <ul>
+                <li>Press <strong>Option+Command+C</strong>.</li>
+                <li>Alternatively, you can enable the Develop menu in Safari's preferences under the Advanced tab. Once enabled, you can access the developer console by navigating to Develop > Show Error Console or Develop > Show JavaScript Console.</li>
+            </ul>
+        </article>
+
+        <article class="block-element solid-border">
+            <h2>2. What is the preferable way of including internal links into an HTML page: absolute or relative links? Describe use cases for choosing absolute links and choosing relative links.</h2>
+            <p><strong>Absolute Links:</strong> These links contain the full URL of the linked page, including the protocol (e.g., http://) and domain (e.g., example.com). They are useful when linking to external websites or specific resources on other domains.</p>
+            <p><strong>Relative Links:</strong> Relative links specify the path to the linked page relative to the current page's location. They are preferred for internal links within the same website because:</p>
+            <ul>
+                <li>They are more flexible and maintainable, especially when restructuring a website's directory structure or moving content to a different location.</li>
+                <li>They are shorter and cleaner compared to absolute URLs, making the HTML markup more readable.</li>
+            </ul>
+            <p><strong>Use cases:</strong></p>
+            <ul>
+                <li><strong>Absolute Links:</strong> Useful for linking to external resources or pages on other domains where the full URL is necessary.</li>
+                <li><strong>Relative Links:</strong> Preferred for internal navigation within the same website. For example, linking between pages within the same website's structure or linking to images, stylesheets, or scripts stored in the same directory or subdirectory.</li>
+            </ul>
+        </article>
+
+        <article class="inline-element dotted-border">
+            <h2>3. Research and write about image formats used in web development. What is the difference between JPG, GIF, and PNG formats? What is WEBP image type? What is SVG?</h2>
+            <p><strong>JPG (JPEG):</strong> JPEG is a lossy compression format commonly used for photographs and images with complex colors and gradients.</p>
+            <p><strong>GIF:</strong> GIF is a lossless compression format that supports animations and transparency.</p>
+            <p><strong>PNG:</strong> PNG is a lossless compression format suitable for images with sharp edges, text, or transparency.</p>
+            <p><strong>WEBP:</strong> WEBP is a modern image format developed by Google, offering both lossy and lossless compression.</p>
+            <p><strong>SVG:</strong> SVG is a vector graphics format based on XML, ideal for scalable graphics and interactive elements.</p>
+        </article>
+
+        <div class="space-between"></div>
+
+        
+        <div class="image-frame">
+            <h2>4. Include the screenshot you’ve created to the report.</h2>
+        </div>
+    </main>
+
+    <div class="image-container">
+        <img src="IMG_6500.JPG" alt="Screenshot" class="image">
+    </div>
+
+    <article class="background-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="background-7">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+</body>
+</html>
