@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Questions</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #708090;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #708090;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        article {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            overflow: hidden; /* Added to clear floated images */
+        }
+        .text-container {
+            float: left;
+            width: calc(100% - 420px); /* Adjusted width to accommodate images */
+        }
+        img {
+            max-width: 400px;
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Questions</h1>
+        <nav>
+            <a href="#box-model">Box Model</a>
+            <a href="#clearfix-hack">Clearfix Hack</a>
+            <a href="#margin-collapse">Margin Collapse</a>
+            <a href="#holy-grail-layout">Holy Grail Layout</a>
+            <a href="#modern-ways">Modern Ways</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="box-model">
+            <div class="text-container">
+                <h2>Box Model in CSS</h2>
+                <p>The box model in CSS describes the design and layout of elements on a webpage. It consists of the content area, padding, border, and margin.</p>
+                <p>The <code>box-sizing</code> property in CSS controls how the total width and height of an element are calculated. By default, it is set to <code>content-box</code>, which only includes the content width and height. Setting it to <code>border-box</code> includes padding and border in the element's total width and height.</p>
+            </div>
+            <img src="css-box-model.png" alt="Box Model">
+        </article>
+
+        <article id="clearfix-hack">
+            <div class="text-container">
+                <h2>Clearfix Hack</h2>
+                <p>The "clearfix hack" is a technique used to contain floated elements within a parent element, preventing the parent from collapsing in height.</p>
+                <p>It needs to be applied when a parent element contains floated child elements and doesn't have a fixed height. Without clearfix, the parent element's height collapses, causing layout issues.</p>
+            </div>
+            <img src="OP01-660x310.png" alt="Clearfix Hack">
+        </article>
+
+        <article id="margin-collapse">
+            <div class="text-container">
+                <h2>Margin Collapse</h2>
+                <p>Margin collapse is a phenomenon in CSS where the margins of adjacent elements collapse into a single margin.</p>
+                <p>Use cases for <code>margin: auto</code> include centering an element horizontally within its container. Negative margin values can be used for creating overlapping effects or adjusting spacing between elements.</p>
+            </div>
+            <img src="0*kAD00byJs8jdmXvr.png" alt="Margin Collapse">
+        </article>
+
+        <article id="holy-grail-layout">
+            <div class="text-container">
+                <h2>Holy Grail Layout</h2>
+                <p>The problem with achieving the Holy Grail layout was creating a webpage layout with a header, footer, and three columns of content, all of which are of equal height and responsive.
+</p>
+            </div>
+            <img src="HolyGrail.svg.png" alt="Holy Grail Problem">
+        </article>
+
+        <article id="modern-ways">
+            <div class="text-container">
+                <h2>Modern Ways to Achieve Holy Grail Layout</h2>
+                <p>Modern techniques such as Flexbox and CSS Grid have made achieving the Holy Grail layout much easier.</p>
+                <p>Flexbox allows for easy alignment and distribution of elements within a container, making it ideal for creating equal-height columns.</p>
+                <p>CSS Grid provides a more advanced layout system, allowing for precise control over column and row placement.</p>
+            </div>
+            <img src="holy-grail-3-column-responsive-layout-diagram.png" alt="Holy Grail Solution">
+        </article>
+    </main>
+
+    <footer>
+        <p>Created by: Zhuiko Yana </p>
+        <p>Course: 1st </p>
+        <p>Group: 354</p>
+       <p> </p>
+    </footer>
+</body>
+</html>
