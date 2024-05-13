@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        .top-news {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px; /* Add margin below the top-news section */
+        }
+
+        .top-news img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .top-news-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .news-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .news-preview {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .news-preview img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .news-preview-content {
+            flex: 1;
+        }
+
+        aside {
+            width: 200px;
+         
+            background-color: #f2f2f2; /* Light gray background */
+            padding: 60px;
+            border-radius: 8px;
+            margin-left: auto; /* Push the aside block to the right */
+            margin-top: -650px; /* Add margin between the aside block and the content */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 300px; /* Add margin between the footer and the content */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top News</h1>
+        <div class="top-news">
+            <img src="728x542_0xac120003_4126345551633381144 2.jpeg" alt="Top News Image">
+            <div class="top-news-content">
+                <h2>Breaking News Headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="news-section">
+            <h2>Latest News</h2>
+            <div class="news-preview">
+                <img src="728x542_0xac120003_4126345551633381144.jpeg" alt="News Image 1">
+                <div class="news-preview-content">
+                    <h3>News Title 1</h3>
+                    <p class="meta-info">Date and Author Info</p>
+                    <p class="excerpt">Short excerpt of the news.</p>
+                    <button>Read More</button>
+                </div>
+
+            </div>
+ <h2>Latest News</h2>
+            <div class="news-preview">
+                <img src="728x542_0xac120003_4126345551633381144.jpeg" alt="News Image 1">
+                <div class="news-preview-content">
+                    <h3>News Title 2</h3>
+                    <p class="meta-info">Date and Author Info</p>
+                    <p class="excerpt">Short excerpt of the news.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+ <h2>Latest News</h2>
+            <div class="news-preview">
+                <img src="728x542_0xac120003_4126345551633381144.jpeg" alt="News Image 1">
+                <div class="news-preview-content">
+                    <h3>News Title 3</h3>
+                    <p class="meta-info">Date and Author Info</p>
+                    <p class="excerpt">Short excerpt of the news.</p>
+                    <button>Read More</button>
+                </div>
+           
+        </section>
+
+         <aside>
+
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+
+              <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 </p>
+    </footer>
+</body>
+</html>
