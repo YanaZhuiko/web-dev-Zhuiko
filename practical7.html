@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+ header {
+            padding: 10px;
+            text-align: top;
+ margin-top: 10px;
+        }
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 10px;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-top: 20px; /* Added margin-top for spacing */
+        }
+  form input, form select, form button {
+            margin-bottom: 10px; /* Added margin between input elements */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+ 
+    <h1>Simple Calculator</h1>
+ </nav>
+    </header>
+    <script>
+        // Function to perform calculation based on two numbers and an operator
+        function calculate(num1, operator, num2) {
+            switch(operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    // Check for division by zero
+                    if(num2 != 0) {
+                        return num1 / num2;
+                    } else {
+                        // Return an error message if division by zero is attempted
+                        return "Error: Division by zero is not allowed.";
+                    }
+                default:
+                    // Return an error message if an invalid operator is provided
+                    return "Error: Invalid operator.";
+            }
+        }
+
+        // Function to perform calculation when the "Calculate" button is clicked
+        function performCalculation() {
+            // Fetching values from input fields
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Performing calculation
+            var result = calculate(num1, operator, num2);
+
+            // Displaying result
+            document.getElementById('result').textContent = "The result is: " + result;
+        }
+    </script>
+
+
+   
+    <form>
+        <!-- Input field for the first number -->
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" value="0"><br>
+
+        <!-- Dropdown for selecting the operator -->
+        <label for="operator">Operator:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br>
+
+       
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" value="0"><br>
+
+      
+        <button type="button" onclick="performCalculation()">Calculate</button>
+
+        
+        <button type="reset">Reset</button>
+    </form>
+
+   
+    <output id="result"></output>
+</body>
+</html>
